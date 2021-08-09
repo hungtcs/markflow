@@ -1,0 +1,51 @@
+{
+  "name": "webpack-react-typescript-starter",
+  "description": "react starter for webpack with typescript",
+  "version": "0.0.1",
+  "license": "MIT",
+  "scripts": {
+    "start": "npm run start:dev",
+    "start:dev": "TS_NODE_PROJECT=tsconfig.webpack.json webpack serve --config=webpack.config.ts --port=3100",
+    "build:dev": "TS_NODE_PROJECT=tsconfig.webpack.json webpack --config=webpack.config.ts",
+    "build": "TS_NODE_PROJECT=tsconfig.webpack.json NODE_ENV=production webpack --config=webpack.config.ts"
+  },
+  "devDependencies": {
+    "@hot-loader/react-dom": "^17.0.1",
+    "@types/copy-webpack-plugin": "^8.0.1",
+    "@types/mini-css-extract-plugin": "^2.0.1",
+    "@types/node": "^16.4.13",
+    "@types/react-dom": "^17.0.9",
+    "@types/webpack": "^5.28.0",
+    "@types/webpack-dev-server": "^3.11.5",
+    "clean-webpack-plugin": "^4.0.0-alpha.0",
+    "copy-webpack-plugin": "^9.0.1",
+    "css-loader": "^6.2.0",
+    "html-webpack-plugin": "^5.3.2",
+    "mini-css-extract-plugin": "^2.2.0",
+    "react-hot-loader": "^4.13.0",
+    "sass": "^1.37.5",
+    "sass-loader": "^12.1.0",
+    "ts-loader": "^9.2.5",
+    "ts-node": "^10.1.0",
+    "tsconfig-paths": "^3.10.1",
+    "tsconfig-paths-webpack-plugin": "^3.5.1",
+    "typescript": "^4.3.5",
+    "webpack": "^5.48.0",
+    "webpack-cli": "^4.7.2",
+    "webpack-dev-server": "^3.11.2"
+  },
+  "author": "鸿则 <hungtcs@outlook.com> (https://github.com/hungtcs-lab)",
+  "dependencies": {
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
+  },
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hungtcs/webpack-react-typescript-starter.git"
+  },
+  "bugs": {
+    "url": "https://github.com/hungtcs/webpack-react-typescript-starter/issues"
+  },
+  "homepage": "https://github.com/hungtcs/webpack-react-typescript-starter#readme"
+}
